@@ -270,7 +270,7 @@ span.img_title{display: block; margin-bottom: 45px; font-size: 24px; font-weight
 .admin_login .login_wrap #loginForm div input{display: none;}
 .admin_login .login_wrap #loginForm div label{height: 30px; padding-left: 45px; font-size: 20px; font-weight: 600; color: #9E9E9E; line-height: 30px; background-image: url(../images/checkbox_before.png); background-repeat: no-repeat; background-size: 28px; background-position: 0; cursor: pointer; text-align: left;}
 .admin_login .login_wrap #loginForm div input:checked ~ label{background-image: url(../images/checkbox_after.png);}
-.admin_login .login_wrap #loginForm button{width: 100%; padding: 25px 0; font-size: 20px; font-weight: 600; color: #fff; border-radius: 2px; background-color: #DD0A35; text-align: center;}
+.admin_login .login_wrap #loginForm button, .admin_login .login_wrap #loginForm > a{width: 100%; padding: 25px 0; font-size: 20px; font-weight: 600; color: #fff; border-radius: 2px; background-color: #DD0A35; text-align: center;}
 /*login fin*/
 
 

@@ -38,7 +38,7 @@ header nav > ul > li ul li a{color: #fff;}
 .title_after::after{content: ''; position: absolute; width: 50px; height: 10px; display: inline-block; background-color: #DD0A35; left: 50%;  bottom: -5px; transform: translateX(-50%);}
 
 footer{position: relative; padding: 35px 100px; background-color: #333333; min-width: 1700px;}
-footer > div{display: flex; align-items: center; justify-content: center;}
+footer > div{position: relative; display: flex; align-items: center; justify-content: center;}
 footer > div h2{max-width: 125px; margin-right: 110px;}
 footer > div h2 img{width: 100%;}
 footer > div div, footer a{color: #666;}
@@ -46,6 +46,7 @@ footer a{display: inline-block;}
 footer > div div address{display: inline-block;}
 footer > div div span{display: block; margin-top: 15px;}
 footer > a{position: absolute; top: 35px; right: 100px;}
+footer > div > a{position: absolute; top: 0; right: 0;}
 
 
 /*admin - 관리자페이지*/
