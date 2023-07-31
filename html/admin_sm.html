@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title>(주)해올정보기술</title>
+    <!-- jquery CDN -->
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <link type="text/css" rel="stylesheet" href="../css/jquery-ui.css">
+    <script src="../js/jquery-ui.js"></script>
+    <!-- plugin CDN -->
+    <script src="../js/swiper.min.js"></script>
+    <link rel="stylesheet" href="../css/swiper.min.css">
+    <script src="../js/core.js"></script>
+    <link rel="stylesheet" href="../css/import.css">
+</head>
+<body>
+    <header class="admin_header">
+        <h1>
+            <a href="index.html">
+                <img src="../../images/header_logo.png" alt="해올정보주식회사 로고">
+            </a>
+        </h1>
+    </header>
+
+    <div class="admin_wrap">
+        <ul class="admin_menu">
+            <li class="active">
+                <a href="admin_si.html">이력관리</a>
+                <ol>
+                    <li><a href="admin_si.html">SI구축사례</a></li>
+                    <li class="active"><a href="admin_sm.html">SM구축사례</a></li>
+                    <li><a href="admin_customer.html">고객사 관리</a></li>
+                </ol>
+                <span><img src="../images/admin_icon_arrow.png" alt="추가 메뉴 아이콘"></span>
+            </li>
+            <li><a href="admin_history.html">연혁관리</a></li>
+            <li><a href="admin_group.html">조직도관리</a></li>
+        </ul>
+
+        <div class="admin_content">
+            <h3 class="text_title">
+                <strong>SM구축사례</strong>
+            </h3>
+
+            <div class="admin_filter">
+                <div class="filter_select">
+                    <span class="textField">NPS국민연금</span>
+                    <i class="material-icons">expand_more</i>
+                    <ul class="selectComponent">
+                        <li>NPS국민연금</li>
+                        <li>G4B기업지원플러스</li>
+                        <li>국가기술표준원</li>
+                        <li>국민건강보험</li>
+                        <li>건강보험심사평가원</li>
+                        <li>KBIZ중소기업중앙회</li>
+                        <li>조달청</li>
+                        <li>TIPA중소기업기술정보진흥원</li>
+                        <li>KCA한국방송통신전파진흥원</li>
+                        <li>소상공인시장진흥공단</li>
+                    </ul>
+                </div>
+                <button>검색</button>
+            </div>
+
+            <div class="table_wrap">
+                <table class="sism_table">
+                    <caption class="img_title">
+                        <div>
+                            <img src="../images/nps국민연금_logo.png" alt="NPS국민연금">
+                        </div>
+                        <button class="add_btn">등록</button>
+                    </caption>
+
+                    <col style="width: 44%;">
+                    <col style="width: 25%;">
+                    <col style="width: 25%;">
+                    <col style="width: 6%;">
+    
+                    <thead>
+                        <tr>
+                            <th>사업명</th>
+                            <th>사업기간</th>
+                            <th>고객사</th>
+                            <th class="noneText">-</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <div class="show_info active">
+                                    <span>1</span>
+                                </div>
+                                <div class="edit_info inputText">
+                                    <label for="b_name6">
+                                        <input type="text" name="b_name6" id="b_name6">
+                                    </label>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="show_info active">
+                                    <span>2020.04</span>
+                                    -
+                                    <span>2020. 11</span>
+                                </div>
+    
+                                <div class="edit_info inputDate">
+                                    <input type="text" id="datepicker11" class="date" autocomplete="off">
+                                    -
+                                    <input type="text" id="datepicker12" class="date" autocomplete="off">
+                                </div>
+                            </td>
+                            <td>
+                                <div class="show_info active">
+                                    <span>국민연금공단</span>
+                                </div>
+                                <div class="edit_info inputText">
+                                    <label for="b_customer6">
+                                        <input type="text" name="b_customer6" id="b_customer6">
+                                    </label>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="show_info active">
+                                    <button class="edit_btn noneText">수정</button>
+                                    <button class="remove_btn noneText">삭제</button>
+                                </div>
+                                <div class="edit_info">
+                                    <input type="submit" value="저장" class="save_btn noneText">
+                                    <button class="cancel_btn noneText">취소</button>
+                                </div>
+                            </td>
+                        </tr>
+    
+                        <tr>
+                            <td>
+                                <div class="show_info active">
+                                    <span>웹-EDI Active 제거개선 사업</span>
+                                </div>
+                                <div class="edit_info inputText">
+                                    <label for="b_name5">
+                                        <input type="text" name="b_name5" id="b_name5">
+                                    </label>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="show_info active">
+                                    <span>2020.04</span>
+                                    -
+                                    <span>2020. 11</span>
+                                </div>
+    
+                                <div class="edit_info inputDate">
+                                    <input type="text" id="datepicker9" class="date" autocomplete="off">
+                                    -
+                                    <input type="text" id="datepicker10" class="date" autocomplete="off">
+                                </div>
+                            </td>
+                            <td>
+                                <div class="show_info active">
+                                    <span>국민연금공단</span>
+                                </div>
+                                <div class="edit_info inputText">
+                                    <label for="b_customer5">
+                                        <input type="text" name="b_customer5" id="b_customer5">
+                                    </label>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="show_info active">
+                                    <button class="edit_btn noneText">수정</button>
+                                    <button class="remove_btn noneText">삭제</button>
+                                </div>
+                                <div class="edit_info">
+                                    <input type="submit" value="저장" class="save_btn noneText">
+                                    <button class="cancel_btn noneText">취소</button>
+                                </div>
+                            </td>
+                        </tr>
+    
+                        <tr>
+                            <td>
+                                <div class="show_info active">
+                                    <span>웹-EDI Active 제거개선 사업</span>
+                                </div>
+                                <div class="edit_info inputText">
+                                    <label for="b_name4">
+                                        <input type="text" name="b_name4" id="b_name4">
+                                    </label>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="show_info active">
+                                    <span>2020.04</span>
+                                    -
+                                    <span>2020. 11</span>
+                                </div>
+    
+                                <div class="edit_info inputDate">
+                                    <input type="text" id="datepicker7" class="date" autocomplete="off">
+                                    -
+                                    <input type="text" id="datepicker8" class="date" autocomplete="off">
+                                </div>
+                            </td>
+                            <td>
+                                <div class="show_info active">
+                                    <span>국민연금공단</span>
+                                </div>
+                                <div class="edit_info inputText">
+                                    <label for="b_customer4">
+                                        <input type="text" name="b_customer4" id="b_customer4">
+                                    </label>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="show_info active">
+                                    <button class="edit_btn noneText">수정</button>
+                                    <button class="remove_btn noneText">삭제</button>
+                                </div>
+                                <div class="edit_info">
+                                    <input type="submit" value="저장" class="save_btn noneText">
+                                    <button class="cancel_btn noneText">취소</button>
+                                </div>
+                            </td>
+                        </tr>
+    
+                        <tr>
+                            <td>
+                                <div class="show_info active">
+                                    <span>웹-EDI Active 제거개선 사업</span>
+                                </div>
+                                <div class="edit_info inputText">
+                                    <label for="b_name3">
+                                        <input type="text" name="b_name3" id="b_name3">
+                                    </label>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="show_info active">
+                                    <span>2020.04</span>
+                                    -
+                                    <span>2020. 11</span>
+                                </div>
+    
+                                <div class="edit_info inputDate">
+                                    <input type="text" id="datepicker5" class="date" autocomplete="off">
+                                    -
+                                    <input type="text" id="datepicker6" class="date" autocomplete="off">
+                                </div>
+                            </td>
+                            <td>
+                                <div class="show_info active">
+                                    <span>국민연금공단</span>
+                                </div>
+                                <div class="edit_info inputText">
+                                    <label for="b_customer3">
+                                        <input type="text" name="b_customer3" id="b_customer3">
+                                    </label>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="show_info active">
+                                    <button class="edit_btn noneText">수정</button>
+                                    <button class="remove_btn noneText">삭제</button>
+                                </div>
+                                <div class="edit_info">
+                                    <input type="submit" value="저장" class="save_btn noneText">
+                                    <button class="cancel_btn noneText">취소</button>
+                                </div>
+                            </td>
+                        </tr>
+    
+                        <tr>
+                            <td>
+                                <div class="show_info active">
+                                    <span>웹-EDI Active 제거개선 사업</span>
+                                </div>
+                                <div class="edit_info inputText">
+                                    <label for="b_name2">
+                                        <input type="text" name="b_name2" id="b_name2">
+                                    </label>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="show_info active">
+                                    <span>2020.04</span>
+                                    -
+                                    <span>2020. 11</span>
+                                </div>
+    
+                                <div class="edit_info inputDate">
+                                    <input type="text" id="datepicker3" class="date" autocomplete="off">
+                                    -
+                                    <input type="text" id="datepicker4" class="date" autocomplete="off">
+                                </div>
+                            </td>
+                            <td>
+                                <div class="show_info active">
+                                    <span>국민연금공단</span>
+                                </div>
+                                <div class="edit_info inputText">
+                                    <label for="b_customer2">
+                                        <input type="text" name="b_customer2" id="b_customer2">
+                                    </label>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="show_info active">
+                                    <button class="edit_btn noneText">수정</button>
+                                    <button class="remove_btn noneText">삭제</button>
+                                </div>
+                                <div class="edit_info">
+                                    <input type="submit" value="저장" class="save_btn noneText">
+                                    <button class="cancel_btn noneText">취소</button>
+                                </div>
+                            </td>
+                        </tr>
+    
+                        <tr>
+                            <td>
+                                <div class="show_info active">
+                                    <span>웹-EDI Active 제거개선 사업</span>
+                                </div>
+                                <div class="edit_info inputText">
+                                    <label for="b_name1">
+                                        <input type="text" name="b_name1" id="b_name1">
+                                    </label>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="show_info active">
+                                    <span>2020.04</span>
+                                    -
+                                    <span>2020. 11</span>
+                                </div>
+    
+                                <div class="edit_info inputDate">
+                                    <input type="text" id="datepicker1" class="date" autocomplete="off">
+                                    -
+                                    <input type="text" id="datepicker2" class="date" autocomplete="off">
+                                </div>
+                            </td>
+                            <td>
+                                <div class="show_info active">
+                                    <span>국민연금공단</span>
+                                </div>
+                                <div class="edit_info inputText">
+                                    <label for="b_customer1">
+                                        <input type="text" name="b_customer1" id="b_customer1">
+                                    </label>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="show_info active">
+                                    <button class="edit_btn noneText">수정</button>
+                                    <button class="remove_btn noneText">삭제</button>
+                                </div>
+                                <div class="edit_info">
+                                    <input type="submit" value="저장" class="save_btn noneText">
+                                    <button class="cancel_btn noneText">취소</button>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div>
+            <h2>
+                <a href="index.html"><img src="../images/footer_logo.png" alt="해올정보주식회사 로고"></a>
+            </h2>
+    
+            <div>
+                <address>서울시 서초구 서초중앙로 41, 10층 (서초동, 대성빌딩)</address> 대표전화: <a href="tel:+8202525-5551">02&#41;525-5551</a> FAX : 02&#41;525-5846
+                <span>Copyright © HAEOL CO,LTD. All Rights Reserved</span>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

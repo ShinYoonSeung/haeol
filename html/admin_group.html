@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title>(주)해올정보기술</title>
+    <!-- jquery CDN -->
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <link type="text/css" rel="stylesheet" href="../css/jquery-ui.css">
+    <script src="../js/jquery-ui.js"></script>
+    <!-- plugin CDN -->
+    <script src="../js/swiper.min.js"></script>
+    <link rel="stylesheet" href="../css/swiper.min.css">
+    <script src="../js/core.js"></script>
+    <link rel="stylesheet" href="../css/import.css">
+</head>
+<body>
+    <header class="admin_header">
+        <h1>
+            <a href="index.html">
+                <img src="../../images/header_logo.png" alt="해올정보주식회사 로고">
+            </a>
+        </h1>
+    </header>
+
+    <div class="admin_wrap">
+        <ul class="admin_menu">
+            <li>
+                <a href="admin_si.html">이력관리</a>
+                <ol>
+                    <li><a href="admin_si.html">SI구축사례</a></li>
+                    <li><a href="admin_sm.html">SM구축사례</a></li>
+                    <li><a href="admin_customer.html">고객사 관리</a></li>
+                </ol>
+                <span><img src="../images/admin_icon_arrow.png" alt="추가 메뉴 아이콘"></span>
+            </li>
+            <li><a href="admin_history.html">연혁관리</a></li>
+            <li class="active"><a href="admin_group.html">조직도관리</a></li>
+        </ul>
+        <div class="admin_content">
+            <div class="table_wrap">
+                <table class="group_table">
+                    <caption class="text_title">
+                        <strong>조직도 리스트</strong>
+                    </caption>
+
+                    <col style="width: 10%;">
+                    <col style="width: 15%;">
+                    <col style="width: 15%;">
+                    <col style="width: 60%;">
+                    
+                    <thead>
+                        <tr>
+                            <th>조직</th>
+                            <th>본부</th>
+                            <th>그룹</th>
+                            <th>조직</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr class="bg_gray">
+                            <td><strong>대표이사</strong></td>
+                            <td class="noneText">-</td>
+                            <td class="noneText">-</td>
+                            <td class="noneText">-</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2"><strong>품질</strong></td>
+                            <td>전사품질</td>
+                            <td class="noneText">-</td>
+                            <td class="noneText">-</td>
+                        </tr>
+                        <tr>
+                            <td>전문위원</td>
+                            <td class="noneText">-</td>
+                            <td class="noneText">-</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="6"><strong>본부</strong></td>
+                            <td>경영지원본부</td>
+                            <td>경영혁신그룹</td>
+                            <td><textarea></textarea></td>
+                        </tr>
+                        <tr>
+                            <td>영업본부</td>
+                            <td>영업그룹</td>
+                            <td><textarea></textarea></td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2">SI사업본부</td>
+                            <td>SI그룹</td>
+                            <td><textarea></textarea></td>
+                        </tr>
+                        <tr>
+                            <td>인프라그룹</td>
+                            <td><textarea></textarea></td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2">에이전시본부</td>
+                            <td>SM그룹</td>
+                            <td><textarea></textarea></td>
+                        </tr>
+                        <tr>
+                            <td>전략기획그룹</td>
+                            <td><textarea></textarea></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="btn_box">
+                    <button class="add_btn">저장</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div>
+            <h2>
+                <a href="index.html"><img src="../images/footer_logo.png" alt="해올정보주식회사 로고"></a>
+            </h2>
+    
+            <div>
+                <address>서울시 서초구 서초중앙로 41, 10층 (서초동, 대성빌딩)</address> 대표전화: <a href="tel:+8202525-5551">02&#41;525-5551</a> FAX : 02&#41;525-5846
+                <span>Copyright © HAEOL CO,LTD. All Rights Reserved</span>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

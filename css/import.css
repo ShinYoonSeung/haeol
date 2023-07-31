@@ -1,0 +1,10 @@
+/* material-icons */
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+/* @import url('fancybox.css'); */
+/* font-import CSS */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+/* system CSS */
+@import url('reset.css');
+@import url('global.css');
+@import url('page.css');

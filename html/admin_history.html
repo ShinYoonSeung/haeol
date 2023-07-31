@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title>(주)해올정보기술</title>
+    <!-- jquery CDN -->
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <link type="text/css" rel="stylesheet" href="../css/jquery-ui.css">
+    <script src="../js/jquery-ui.js"></script>
+    <!-- plugin CDN -->
+    <script src="../js/swiper.min.js"></script>
+    <link rel="stylesheet" href="../css/swiper.min.css">
+    <script src="../js/core.js"></script>
+    <link rel="stylesheet" href="../css/import.css">
+</head>
+<body>
+    <header class="admin_header">
+        <h1>
+            <a href="index.html">
+                <img src="../../images/header_logo.png" alt="해올정보주식회사 로고">
+            </a>
+        </h1>
+    </header>
+
+    <div class="admin_wrap">
+        <ul class="admin_menu">
+            <li>
+                <a href="admin_si.html">이력관리</a>
+                <ol>
+                    <li><a href="admin_si.html">SI구축사례</a></li>
+                    <li><a href="admin_sm.html">SM구축사례</a></li>
+                    <li><a href="admin_customer.html">고객사 관리</a></li>
+                </ol>
+                <span><img src="../images/admin_icon_arrow.png" alt="추가 메뉴 아이콘"></span>
+            </li>
+            <li class="active"><a href="admin_history.html">연혁관리</a></li>
+            <li><a href="admin_group.html">조직도관리</a></li>
+        </ul>
+
+        <div class="admin_content">
+
+            <table class="history_table">
+                <caption class="text_title">
+                    <strong>연혁 리스트</strong>
+                    <button class="add_btn">등록</button>
+                </caption>
+                
+                <col style="width: 10%;">
+                <col style="width: 7%;">
+                <col style="width: 77%;">
+                <col style="width: 6%;">
+
+                <thead>
+                    <tr>
+                        <th>연도(년)</th>
+                        <th>연도(월)</th>
+                        <th>연혁</th>
+                        <th class="noneText">-</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <div class="show_info">
+                                <span class="yearField4">2016</span>
+                            </div>
+                            <div class="edit_info active">
+                                <div class="history_year history_select">
+                                    <span class="yearField4">년도</span>
+                                    <i class="material-icons">expand_more</i>
+                                    <ul class="year_selectComponent">
+                                        <li>2023</li>
+                                        <li>2022</li>
+                                        <li>2021</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="show_info">
+                                <span>9</span>
+                            </div>
+                            <div class="edit_info active">
+                                <div class="history_month history_select">
+                                    <span class="monthField4">월</span>
+                                    <i class="material-icons">expand_more</i>
+                                    <ul class="month_selectComponent">
+                                        <li>9</li>
+                                        <li>8</li>
+                                        <li>7</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="show_info">
+                                <span>정보통신산업진흥원 감사장 수여</span>
+                            </div>
+                            <div class="edit_info inputText active">
+                                <label for="work1">
+                                    <input type="text" name="work" id="work1">
+                                </label>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="show_info">
+                                <button class="edit_btn noneText">수정</button>
+                                <button class="remove_btn noneText">삭제</button>
+                            </div>
+                            <div class="edit_info active">
+                                <input type="submit" value="저장" class="save_btn noneText">
+                                <button class="cancel_btn noneText">취소</button>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            <div class="show_info active">
+                                <span>2019</span>
+                            </div>
+                            <div class="edit_info">
+                                <div class="history_year history_select">
+                                    <span class="yearField3">년도</span>
+                                    <i class="material-icons">expand_more</i>
+                                    <ul class="year_selectComponent">
+                                        <li>2023</li>
+                                        <li>2022</li>
+                                        <li>2021</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="show_info active">
+                                <span>8</span>
+                            </div>
+                            <div class="edit_info">
+                                <div class="history_month history_select">
+                                    <span class="monthField3">월</span>
+                                    <i class="material-icons">expand_more</i>
+                                    <ul class="month_selectComponent">
+                                        <li>9</li>
+                                        <li>8</li>
+                                        <li>7</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="show_info active">
+                                <span>정보통신산업진흥원 감사장 수여</span>
+                            </div>
+                            <div class="edit_info inputText">
+                                <label for="work2">
+                                    <input type="text" name="work" id="work2">
+                                </label>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="show_info active">
+                                <button class="edit_btn noneText">수정</button>
+                                <button class="remove_btn noneText">삭제</button>
+                            </div>
+                            <div class="edit_info">
+                                <input type="submit" value="저장" class="save_btn noneText">
+                                <button class="cancel_btn noneText">취소</button>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <div class="show_info active">
+                                <span>2018</span>
+                            </div>
+                            <div class="edit_info">
+                                <div class="history_year history_select">
+                                    <span class="yearField2">년도</span>
+                                    <i class="material-icons">expand_more</i>
+                                    <ul class="year_select">
+                                        <li>2023</li>
+                                        <li>2022</li>
+                                        <li>2021</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="show_info active">
+                                <span>9</span>
+                            </div>
+                            <div class="edit_info">
+                                <div class="history_month history_select">
+                                    <span class="monthField2">월</span>
+                                    <i class="material-icons">expand_more</i>
+                                    <ul class="month_selectComponent">
+                                        <li>9</li>
+                                        <li>8</li>
+                                        <li>7</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="show_info active">
+                                <span>정보통신산업진흥원 감사장 수여</span>
+                            </div>
+                            <div class="edit_info inputText">
+                                <label for="work3">
+                                    <input type="text" name="work" id="work3">
+                                </label>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="show_info active">
+                                <button class="edit_btn noneText">수정</button>
+                                <button class="remove_btn noneText">삭제</button>
+                            </div>
+                            <div class="edit_info">
+                                <input type="submit" value="저장" class="save_btn noneText">
+                                <button class="cancel_btn noneText">취소</button>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            <div class="show_info active">
+                                <span>2017</span>
+                            </div>
+                            <div class="edit_info">
+                                <div class="history_year history_select">
+                                    <span class="yearField1">년도</span>
+                                    <i class="material-icons">expand_more </i>
+                                    <ul class="year_select">
+                                        <li>2023</li>
+                                        <li>2022</li>
+                                        <li>2021</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="show_info active">
+                                <span>9</span>
+                            </div>
+                            <div class="edit_info">
+                                <div class="history_month history_select">
+                                    <span class="monthField1">월</span>
+                                    <i class="material-icons">expand_more</i>
+                                    <ul class="month_selectComponent">
+                                        <li>9</li>
+                                        <li>8</li>
+                                        <li>7</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="show_info active">
+                                <span>정보통신산업진흥원 감사장 수여</span>
+                            </div>
+                            <div class="edit_info inputText">
+                                <label for="work4">
+                                    <input type="text" name="work" id="work4">
+                                </label>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="show_info active">
+                                <button class="edit_btn noneText">수정</button>
+                                <button class="remove_btn noneText">삭제</button>
+                            </div>
+                            <div class="edit_info">
+                                <input type="submit" value="저장" class="save_btn noneText">
+                                <button class="cancel_btn noneText">취소</button>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <footer>
+        <div>
+            <h2>
+                <a href="index.html"><img src="../images/footer_logo.png" alt="해올정보주식회사 로고"></a>
+            </h2>
+    
+            <div>
+                <address>서울시 서초구 서초중앙로 41, 10층 (서초동, 대성빌딩)</address> 대표전화: <a href="tel:+8202525-5551">02&#41;525-5551</a> FAX : 02&#41;525-5846
+                <span>Copyright © HAEOL CO,LTD. All Rights Reserved</span>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
